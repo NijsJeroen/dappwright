@@ -25,7 +25,7 @@ export const addNetwork =
       throw new SyntaxError(errorMessage);
     }
 
-    await clickOnButton(page, 'Save');
+    await clickOnButton(page, 'Opslaan');
 
     await page.waitForSelector(`//*[text() = '${networkName}']`);
 
